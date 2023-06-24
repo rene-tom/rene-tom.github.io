@@ -124,7 +124,8 @@ header nav ul li a:hover{
 
 .competences_title .title3{
     color: #fff;
-    font-size: 15px;
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 .competences_content{
