@@ -1,0 +1,295 @@
+body{
+    background-color: #27252B;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ---------------------------------- HEADER --------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    margin-left: 100px;
+}
+
+header nav ul li a{
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    color: #7637C7;
+}
+
+/* ---------------------------------- PRESENTATION --------------------------------- */
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 500px;
+}
+
+.presentation_left{
+    width: 33%;
+    padding-bottom: 100px;
+}
+
+.presentation_left h1{
+    font-size: 50px;
+}
+
+.nom{
+    color: #7637C7;
+}
+
+.button_contact{
+    background-color: #575757;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.button_contact:hover{
+    background-color: #7637C7;
+}
+
+.presentation_middle{
+    width: 33%;
+    background-color: green;
+}
+
+.presentation_middle img{
+    position : absolute;
+    top : 154px;
+    left : 45%;
+    transform : translateX(-50%);
+}
+
+.presentation_right{
+    width: 33%;
+    padding-bottom: 50px;
+}
+
+.presentation_right h3{
+    color: #7637C7;
+}
+
+
+/* ---------------------------------- COMPETENCES --------------------------------- */
+
+
+.competences{
+    background-color: #343237;
+    margin-top: 50px;
+}
+
+.competences_title{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.competences_title .title1{
+    color: #7637C7;
+}
+
+.competences_title .title2{
+    color: #fff;
+    font-size: 30px;
+}
+
+.competences_title .title3{
+    color: #fff;
+    font-size: 15px;
+}
+
+.competences_content{
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 50px;
+}
+
+
+.competence1, .competence2, .competence3, .competence4, .competence5, .competence6, .competence7, .competence8{
+    background-color: #27252B;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.line3, .line4{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+/* ---------------------------------- PROJETS --------------------------------- */
+
+.projets{
+    background-color: #27252B;
+    margin-bottom: 50px;
+}
+
+.projets_content{
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.projets_content div{
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #343237;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    transition: 0.3s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.projets_content div:hover{
+    background-color: #7637C7;
+}
+
+
+
+/* ---------------------------------- CONTACT --------------------------------- */
+
+
+footer{
+    background-color: #343237;
+}
+
+.footer_content{
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.line1, .line2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer1, .footer2, .footer3, .footer4{
+    display: flex;
+    justify-content: space-between;
+    background-color: #27252B;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    width: 400px;
+}
+
+
+.footer1:hover, .footer2:hover, .footer3:hover, .footer4:hover{
+    background-color: #7637C7;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+/* ---------------------------------- PROJETS CAS PAR CAS --------------------------------- */
+
+.proj{
+    text-align: center;
+}
+
+.title_projet{
+    text-align: center;
+}
+
+.titre_projet{
+    text-align: center;
+    color : #7637C7;
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.sous_titre_projet{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.langage_projet{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.proj p{
+    color: #fff;
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+.gameplay{
+    margin-top: 50px;
+    width: 700px;
+    height: 430px;
+    background-color: #39383a;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding-top: 5px;
+}
+
+.git{
+    margin-top: 50px;
+    width: 220px;
+    height: 140px;
+    background-color: #39383a;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding-top: 5px;
+    margin-bottom: 100px;
+}
+
