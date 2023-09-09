@@ -13,6 +13,29 @@
         <div class="menu">
             <a href="#"><img src="img/menu.png" alt="" width="50px"></a>
         </div>
+
+        <div class="menu_phone">
+            <img src="img/croix.png" alt="">
+            <a href="index.html">Accueil</a> 
+            <a href="projets.html">Projets</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">Linkedin</a>        
+        </div>
+
+        <script>
+            var menu = document.querySelector(".menu");
+            var menu_phone = document.querySelector(".menu_phone");
+            var croix = document.querySelector(".menu_phone img");
+
+            menu.addEventListener("click", function(){
+                menu_phone.style.display = "grid";
+            })
+
+            croix.addEventListener("click", function(){
+                menu_phone.style.display = "none";
+            })
+        </script>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -42,28 +65,28 @@
 
         <div class="projets_content">
             <a href="tiny_tank.html">
-                <div class="projet1">
+                <div class="projet">
                     <img src="img/tiny_tanks.png" alt="" width="150px">
                     <h3>Tiny Tanks</h3>
                 </div>
             </a>
 
             <a href="dactylo.html">
-                <div class="projet2">
+                <div class="projet">
                     <img src="img/dactylo.png" alt="" width="150px">
                     <h3>Dactylogame</h3>
                 </div>
             </a>
 
             <a href="minishell.html">
-                <div class="projet3">
+                <div class="projet">
                     <img src="img/mini_shell.png" alt="" width="150px">
                     <h3>Mini-shell</h3>
                 </div>
             </a>
 
             <a href="catan.html">
-                <div class="projet4">
+                <div class="projet">
                     <img src="img/catan.png" alt="" width="150px">
                     <h3>Catan</h3>
                 </div>
@@ -83,14 +106,14 @@
 
         <div class="projets_content">
             <a href="robot_planet.html">
-                <div class="projet1">
+                <div class="projet">
                     <img src="img/robot_planet.png" alt="" width="150px">
                     <h3>Robot Planet</h3>
                 </div>
             </a>
 
             <a href="tower_defense.html">
-                <div class="projet2">
+                <div class="projet">
                     <img src="img/tower_defense.png" alt="" width="150px">
                     <h3>Tower Defense</h3>
                 </div>

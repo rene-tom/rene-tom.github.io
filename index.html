@@ -13,6 +13,29 @@
         <div class="menu">
             <a href="#"><img src="img/menu.png" alt="" width="50px"></a>
         </div>
+
+        <div class="menu_phone">
+            <img src="img/croix.png" alt="">
+            <a href="index.html">Accueil</a> 
+            <a href="projets.html">Projets</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">Linkedin</a>        
+        </div>
+
+        <script>
+            var menu = document.querySelector(".menu");
+            var menu_phone = document.querySelector(".menu_phone");
+            var croix = document.querySelector(".menu_phone img");
+
+            menu.addEventListener("click", function(){
+                menu_phone.style.display = "grid";
+            })
+
+            croix.addEventListener("click", function(){
+                menu_phone.style.display = "none";
+            })
+        </script>
+
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -57,46 +80,40 @@
         </div>
         <div class="competences_content">
 
-            <div class="line3">
-                <div class="competence1">
-                    <img src="img/unreal_engine.png" width="150px">
+                <div class="competence">
+                    <img src="img/unreal_engine.png" >
                     <h3>Unreal Engine</h3>
                 </div>
-                <div class="competence2">
-                    <img src="img/c++.png" width="150px">
+                <div class="competence">
+                    <img src="img/c++.png" >
                     <h3>C++</h3>
                 </div>
-                <div class="competence3">
-                    <img src="img/git.png" width="150px">
+                <div class="competence">
+                    <img src="img/git.png" >
                     <h3>Git</h3>
                 </div>
-                <div class="competence4">
-                    <img src="img/visual_studio.png" width="150px">
+                <div class="competence">
+                    <img src="img/visual_studio.png" >
                     <h3>Visual Studio</h3>
                 </div>
-            </div>
-
-            <div class="line4">
-                <div class="competence5">
-                    <img src="img/java.png" width="150px">
+ 
+                <div class="competence">
+                    <img src="img/java.png" >
                     <h3>Java</h3>
                 </div>
-                <div class="competence6">
-                    <img src="img/python.png" width="150px">
+                <div class="competence">
+                    <img src="img/python.png" >
                     <h3>Python</h3>
                 </div>
-                <div class="competence7">
-                    <img src="img/algo.png" width="150px">
+                <div class="competence">
+                    <img src="img/algo.png" >
                     <h3>Algorithmie</h3>
                 </div>
-                <div class="competence8">
-                    <img src="img/anglais.png" width="150px">
+                <div class="competence">
+                    <img src="img/anglais.png" >
                     <h3>Anglais C1</h3>
                 </div>
-            </div>
-
-
-
+    
         </div>
     </div>
 
@@ -119,29 +136,29 @@
 
         <div class="projets_content">
             <a href="tiny_tank.html">
-                <div class="projet1">
-                    <img src="img/tiny_tanks.png" alt="" width="150px">
+                <div class="projet">
+                    <img src="img/tiny_tanks.png" alt="" >
                     <h3>Tiny Tanks</h3>
                 </div>
             </a>
 
             <a href="dactylo.html">
-                <div class="projet2">
-                    <img src="img/dactylo.png" alt="" width="150px">
+                <div class="projet">
+                    <img src="img/dactylo.png" alt="" >
                     <h3>Dactylogame</h3>
                 </div>
             </a>
 
             <a href="minishell.html">
-                <div class="projet3">
-                    <img src="img/mini_shell.png" alt="" width="150px">
+                <div class="projet">
+                    <img src="img/mini_shell.png" alt="" >
                     <h3>Mini-shell</h3>
                 </div>
             </a>
 
             <a href="catan.html">
-                <div class="projet4">
-                    <img src="img/catan.png" alt="" width="150px">
+                <div class="projet">
+                    <img src="img/catan.png" alt="">
                     <h3>Catan</h3>
                 </div>
             </a>
@@ -162,14 +179,14 @@
 
         <div class="projets_content">
             <a href="robot_planet.html">
-                <div class="projet1">
+                <div class="projet">
                     <img src="img/robot_planet.png" alt="" width="150px">
                     <h3>Robot Planet</h3>
                 </div>
             </a>
 
             <a href="tower_defense.html">
-                <div class="projet2">
+                <div class="projet">
                     <img src="img/tower_defense.png" alt="" width="150px">
                     <h3>Tower Defense</h3>
                 </div>
@@ -189,31 +206,27 @@
         </div>
 
         <div class="footer_content">
-
-            <div class="line1">
-                <div class="footer1">
-                    <img src="img/mail.png" alt="">
-                    <h3>re.tom2003@gmail.com</h3>
-                </div>
-                <div class="footer2">
-                    <img src="img/phone.png" alt="">
-                    <h3>06 58 69 28 67</h3>
-                </div>
+           
+            <div class="footer">
+                <img src="img/mail.png" alt="">
+                <h3>re.tom2003@gmail.com</h3>
+            </div>
+            <div class="footer">
+                <img src="img/phone.png" alt="">
+                <h3>06 58 69 28 67</h3>
+            </div>
+            <div class="footer">
+                <img src="img/adresse.png" alt="">
+                <h3>47 bis rue du clos, Ris-Orangis</h3>
             </div>
 
-            <div class="line2">
-                <div class="footer3">
-                    <img src="img/adresse.png" alt="">
-                    <h3>47 bis rue du clos, Ris-Orangis</h3>
+            <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">
+                <div class="footer">
+                    <img src="img/linkedin_white.png" alt="">
+                    <h3>Tom René</h3>
                 </div>
-    
-                <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">
-                    <div class="footer4">
-                        <img src="img/linkedin_white.png" alt="">
-                        <h3>Tom René</h3>
-                    </div>
-                </a>
-            </div>
+            </a>
+      
 
         </div>
         

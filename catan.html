@@ -13,6 +13,29 @@
         <div class="menu">
             <a href="#"><img src="img/menu.png" alt="" width="50px"></a>
         </div>
+
+        <div class="menu_phone">
+            <img src="img/croix.png" alt="">
+            <a href="index.html">Accueil</a> 
+            <a href="projets.html">Projets</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">Linkedin</a>        
+        </div>
+
+        <script>
+            var menu = document.querySelector(".menu");
+            var menu_phone = document.querySelector(".menu_phone");
+            var croix = document.querySelector(".menu_phone img");
+
+            menu.addEventListener("click", function(){
+                menu_phone.style.display = "grid";
+            })
+
+            croix.addEventListener("click", function(){
+                menu_phone.style.display = "none";
+            })
+        </script>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -33,7 +56,7 @@
 
         </div>
 
-        <img src="img/Screen_Catan.jpg" alt="" width="500px">
+        <img class="proj_img" src="img/Screen_Catan.jpg" alt="" width="500px">
 
         <p>
             En deuxième année de licence, nous avons dû par binôme réaliser notre premier jeu sur Java. <br>

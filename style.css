@@ -42,6 +42,31 @@ header nav ul li a:hover{
     color: #7637C7;
 }
 
+.menu_phone{
+    background-color: #919191;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    display: none;
+    border-radius: 10px;
+}
+
+.menu_phone a{
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.menu_phone img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+}
+
 /* ---------------------------------- PRESENTATION --------------------------------- */
 
 .presentation{
@@ -128,28 +153,46 @@ header nav ul li a:hover{
     text-decoration: underline;
 }
 
+.competences_title p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .competences_content{
-    justify-content: space-around;
     margin-top: 50px;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 50px;
+    width: 805px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 
-.competence1, .competence2, .competence3, .competence4, .competence5, .competence6, .competence7, .competence8{
+.competence{
     background-color: #27252B;
-    justify-content: space-between;
     padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     border-radius: 5px;
+    width: 150px;
+    height: 200px;
+}
+
+.competence img{
+    width: 150px;
 }
 
 
 .line3, .line4{
     display: flex;
     justify-content: space-around;
+    width: 900px;
     margin-top: 20px;
+    background-color: red;
 }
 
 
@@ -168,7 +211,7 @@ header nav ul li a:hover{
     margin-top: 50px;
 }
 
-.projets_content div{
+.projet{
     display: flex;
     margin-bottom: 30px;
     background-color: #343237;
@@ -195,21 +238,19 @@ footer{
 }
 
 .footer_content{
+    width: 900px;
     justify-content: space-around;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.line1, .line2{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-left: auto;
     margin-right: auto;
 }
 
-.footer1, .footer2, .footer3, .footer4{
+
+
+.footer{
     display: flex;
     justify-content: space-between;
     background-color: #27252B;
@@ -219,7 +260,7 @@ footer{
     align-items: center;
     margin-bottom: 20px;
     transition: 0.3s;
-    width: 400px;
+    margin: 20px;
 }
 
 
@@ -269,17 +310,24 @@ footer img{
     color: #fff;
     font-size: 17px;
     margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .gameplay{
     margin-top: 50px;
     width: 700px;
-    height: 430px;
     background-color: #39383a;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
     padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+iframe{
+    width: 500px;
+    height: 300px;
 }
 
 .git{
@@ -294,3 +342,144 @@ footer img{
     margin-bottom: 100px;
 }
 
+
+/* si l'ecran fait moins de 1095 px de large */
+
+@media screen and (max-width: 1095px){
+
+    nav{
+        display: none;
+    }
+
+
+    .presentation{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .presentation_left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .presentation_middle{
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .presentation_middle img{
+        position : absolute;
+        top : 154px;
+        left : 45%;
+        transform : translateX(-50%);
+    }
+
+    .presentation_right{
+        width: 100%;
+        text-align: center;
+    }
+
+    .competences_title .title1{
+        font-size: 30px;
+    }
+
+    .competences_title .title2{
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .competences_content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+    .competences_content{
+        width: 600px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_content{
+        width: 600px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .footer{
+        margin: 20px;
+    }
+
+    .proj_img{
+        width: 500px;
+    }
+
+    .gameplay{
+        width: 500px;
+    }
+
+    iframe{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .competences_content{
+        width: 300px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .projets_content{
+        text-align: center;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    
+
+    .projet{
+        display: flex;
+        margin-bottom: 30px;
+        background-color: #343237;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        transition: 0.3s;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .projets_content img{
+        width: 50px;
+    }
+
+    .footer_content{
+        width: 360px;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 12px;
+    }
+    
+    .footer{
+        margin: 20px;
+    }
+
+    .proj_img{
+        width: 300px;
+    }
+
+    .gameplay{
+        width: 320px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 150px;
+    }
+
+
+}

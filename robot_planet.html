@@ -13,6 +13,29 @@
         <div class="menu">
             <a href="#"><img src="img/menu.png" alt="" width="50px"></a>
         </div>
+
+        <div class="menu_phone">
+            <img src="img/croix.png" alt="">
+            <a href="index.html">Accueil</a> 
+            <a href="projets.html">Projets</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">Linkedin</a>        
+        </div>
+
+        <script>
+            var menu = document.querySelector(".menu");
+            var menu_phone = document.querySelector(".menu_phone");
+            var croix = document.querySelector(".menu_phone img");
+
+            menu.addEventListener("click", function(){
+                menu_phone.style.display = "grid";
+            })
+
+            croix.addEventListener("click", function(){
+                menu_phone.style.display = "none";
+            })
+        </script>
+        
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -33,7 +56,7 @@
 
         </div>
 
-        <img src="img/Screen_PR.jpg" alt="" width="500px">
+        <img class="proj_img" src="img/Screen_PR.jpg" alt="" width="500px">
 
         <p>
             Pour m'entrainer à utiliser le moteur Unreal Engine j'ai fait un premier projet solo. <br>
@@ -54,7 +77,7 @@
 
         <div class="gameplay">
             <h2>Gameplay</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UH6ZN0Eha2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" src="https://www.youtube.com/embed/UH6ZN0Eha2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 
