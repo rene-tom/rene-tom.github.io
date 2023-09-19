@@ -342,6 +342,37 @@ iframe{
     margin-bottom: 100px;
 }
 
+/* ---------------------------------- DEVLOGS --------------------------------- */
+
+.devlogs{
+    /* text-align: center; */
+    text-align: auto;
+    margin-top: 50px;
+    display : inline-flex;
+    justify-content: space-around;
+}
+
+.devlogs_footer {
+    width: 100%;
+}
+
+.devlogs_footer_left {
+    width : 75%;
+    float : left;
+}
+
+.devlogs_footer_right {
+    width : 25%;
+    float : right;
+}
+
+.devlogs_footer a {
+    color : #7637C7;
+    font-size : 25px;
+
+}
+
+
 
 /* si l'ecran fait moins de 1095 px de large */
 

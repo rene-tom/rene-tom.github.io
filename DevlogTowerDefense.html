@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devlog Tower Defense</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <a href="#"><img src="img/menu.png" alt="" width="50px"></a>
+        </div>
+
+        <div class="menu_phone">
+            <img src="img/croix.png" alt="">
+            <a href="index.html">Accueil</a> 
+            <a href="projets.html">Projets</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">Linkedin</a>        
+        </div>
+
+        <script>
+            var menu = document.querySelector(".menu");
+            var menu_phone = document.querySelector(".menu_phone");
+            var croix = document.querySelector(".menu_phone img");
+
+            menu.addEventListener("click", function(){
+                menu_phone.style.display = "grid";
+            })
+
+            croix.addEventListener("click", function(){
+                menu_phone.style.display = "none";
+            })
+        </script>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/"><img src="img/linkedin.png" alt="" width="50px"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="proj">
+        <div class="title_projet">
+            <h1>
+                <span class="titre_projet">Devlog Tower Defense N°1 </span> <br>
+                <span class="sous_titre_projet">Premières mécaniques</span> <br>
+                <span class="langage_projet">Unreal Engine Blueprint </span>
+            </h1>
+
+        </div>
+
+        <img class="proj_img" src="img/UC.jpg" alt="" width="500px">
+
+        <p>
+            Ceci est le premier Devlog de mon projet Tower Defense.<br>
+            Tout le long de la série de Devlog vous trouverez le processus de création du jeu, avec ses complications et ses solutions.<br>
+            Ce projet était de base un moyen de développer des capacités donc il n'y a pas eu de réel réflexion au niveau du design pour commencer. <br>
+        </p>
+
+
+
+        <div class="devlogs">
+            <img class="proj_img" src="img/gifs/TowerAim.gif" alt="" width="500px">
+            
+            <p>
+                <b><span class="sous_titre_projet">Visée</span></b> <br><br>
+                Il fallait faire les bases, j'ai donc commencé par implémenter le système de Visée des tours. <br>
+                En parallèle pour le tester j'ai aussi implémenté le système de Route Prédéfinie <br>
+                La visée à dans un premier temps été implémenté de manière triviale, la tour vérifiait periodiquement si il y avait un ennemi dans son rayon. <br>
+                Si c'était le cas alors elle stockait cet ennemi en mémoire et ensuite périodiquement elle se tournait en direction de cet ennemi. <br>
+                Au niveau de la route prédéfinie, j'ai utilisé les une "Spline" qui est une courbe qui relie un ensemble de points. <br>
+                Je fais donc apparaitre les ennemis au point de départ de la courbe, et à l'aide d'un système de Timer je les fais transitioner de manière fluide entre les différents points de la Spline.<br>      
+            </p>
+        </div>
+
+        <div class="devlogs">
+            
+            <p>
+                <b><span class="sous_titre_projet">Caméra</span></b><br><br>
+                Après avoir fait les bases, j'ai commencé à implémenter le système de caméra pour le joueur. <br>
+                J'ai décidé de faire une vue du dessus légèrement inclinée car cela permet au joueur de mieux gérer ses Tours.<br>
+                Pour son implémentation, le joueur contrôle un pion invisible et intangible qui est attaché à la caméra. <br>
+                Ce pion se déplace en fonction des touches WASD et on peut changer la direction avec le clique droit de la souris. <br>
+                Un système de Zoom est aussi implémenté avec la molette de la souris, mais il est restreint à des valeurs raisonnables.
+            </p>
+                <img class="proj_img" src="img/gifs/CameraMovement.gif" alt="" width="500px">
+
+        </div>
+
+        <div class="devlogs">
+            
+            <p>
+            <b><span class="sous_titre_projet">Déplacement de Tour</span></b><br><br>
+                Pour finir dans les mécaniques de base, j'ai implémenté le système de déplacement de Tour.<br>
+                J'en aurais besoin lorsque je voudrais implémenter l'achat de Tour, voire la modification de placement donc je l'ai fait le plus tôt possible.<br>
+                Pour cela j'ai utilisé le Node "Get Hit Under Cursor By Channel" qui permet de récupérer l'objet sous le curseur de la souris.<br>
+                Ce Node m'a permis de :<br>
+                - Récupérer la Tour qui est sous le curseur de la souris <br>
+                - Ensuite Récupérer la position au sol sous le curseur de la souris <br>
+                La première utilité me permet de sélectionner la tour à déplacer, la seconde permet au système de savoir où la placer. <br>
+            </p>
+        </div>
+        <br><br><br>
+        <img class="devlogs_gif" src="img/gifs/TowerGrab.gif" alt="" width="500px" >
+        <br><br><br>
+         
+
+    </div>
+
+
+</body>
+<footer>
+    <div class="devlogs_footer">
+        <div class="devlogs_footer_left">
+        </div>
+        <div class="devlogs_footer_right">
+            Cliquez Ici pour accéder au Devlog N°2 :<br>
+            <a href="DevlogTowerDefense2.html">Mécaniques de Tour</a>
+        </div>
+    </div>
+</footer>
+</html>
