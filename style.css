@@ -42,12 +42,16 @@ header nav ul li a:hover{
     color: #7637C7;
 }
 
+.menu a{
+    display: none;
+}
+
 .menu_phone{
     background-color: #919191;
     position: absolute;
     top: 40px;
     left: 40px;
-    width: 80%;
+    width: 300px;
     text-align: center;
     font-size: 20px;
     display: none;
@@ -345,11 +349,31 @@ iframe{
 /* ---------------------------------- DEVLOGS --------------------------------- */
 
 .devlogs{
-    /* text-align: center; */
+    text-align: left;
     text-align: auto;
     margin-top: 50px;
-    display : inline-flex;
+    margin-left: 300px;
+    margin-right: 150px;
+    display : flex;
     justify-content: space-around;
+}
+
+.sous_titre_projet_devlog{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.devlogs_sous_sous_rubrique{
+    font-size: 25px;
+    text-align: center;
+}
+
+.devlogs_img{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .devlogs_footer {
@@ -382,6 +406,9 @@ iframe{
         display: none;
     }
 
+    .menu a{
+        display: block;
+    }
 
     .presentation{
         flex-direction: column;

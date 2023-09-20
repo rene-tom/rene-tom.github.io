@@ -57,9 +57,104 @@
         </div>
 
         <img class="proj_img" src="img/UC.jpg" alt="" width="500px">
+        <br>
+        Bienvenue sur ce 2ème Devlog de mon projet de Tower Defense ! <br><br>
+        Cette fois-ci nous allons parler des mécaniques des Tours du jeu.<br>
+        
+        <div class="devlogs" >  
+            <div>
+                <b><div class="sous_titre_projet_devlog" style="text-align:center;">Statistiques</div></b> <br><br>
+                Au niveau des statistiques les tours en sont dotés de plusieurs types :<br>
+                <div class="devlogs_sous_sous_rubrique">Les "Classiques" : </div><br>
+                <ul>
+                    <li>- Puissance </li>
+                    <li>- Fréquence D'attaque </li> 
+                    <li>- Portée</li> 
+                    <li>- Élément (Feu, Glace, Neutre, pour le moment)</li> 
+                </ul>
+                Je compte utiliser les éléments pour créer des interactions entre les tours et les ennemis comme une simple réduction de dégâts.<br>
+                Ou alors les utiliser pour créer des effets en réponse à certains scénarios (Par exemple augmenter la vitesse d'un ennemi s'il prend des dégâts feu, la réduire s'ils sont glace ou autre)<br>
+                
+                <br><br>
+                <div class="devlogs_sous_sous_rubrique">Le "Type de Focus" </div>
+                Un attribut qui définit quel ennemi est prioritaire pour la tour. Parmi :
+                <ul>
+                    <li> - Le plus proche de l'arrivée </li>
+                    <li> - Le plus loin de l'arrivée </li>
+                    <li> - Le plus proche de la tour </li>
+                    <li> - L'ennemi possédant le plus de vie courante </li>
+                            (Des ajouts sont possibles encore)
+                </ul>
+                Ici on sent fortement l'inspiration des jeux de Tower Defense comme la série des Bloons TD.
+                Je trouve que ce système permet au joueur de se sentir plus "en contrôle" donc je l'ai implémenté.
+                
+                <br><br>
+                <div class="devlogs_sous_sous_rubrique">Et les "Tags" Spéciaux  :</div> 
+                Il y a les Types de dégâts :<br>
+                <ul>
+                <li>- Contondants, Tranchants et Magiques</li>
+                </ul>
+                Et le reste :
+                <ul>
+                    <li> Explosion, Anti-Camouflage etc. </li>
+                </ul>
+                A quoi servent les Tags ?
+                <ul>
+                <li> Les Tags sont des étiquettes qui sont attribuées aux Tours, elle sont utilisées pour créer des interactions spécifiques à un ensemble de Tour.
+                    Comme des améliorations/réductions de dégâts dans certains cas.
+                </li>
+                
+            </div>
 
-        <br><br> <span class="sous_titre_projet">EN CONSTRUCTION</span> <br><br><br>
+            <img class="devlogs_img" src="img/Devlogs/TowerInfoUI.png" alt="" width="475px" height="600px">
+        </div>
 
+        <div class="devlogs">  
+            <img class="devlogs_img" src="img/Devlogs/TowerLevelUI.png" alt="" width="400px" height="728">
+
+            <div>
+                <b><div class="sous_titre_projet_devlog" style="text-align:center;">Améliorations et Niveau de tour</div></b> <br><br>
+                Les Tours peuvent être améliorées, pour l'instant il faut dépenser de l'argent mais cela est possible que je change de système.<br>
+                Ce système est aussi inspiré de la Série des Bloons TD, mais il y a quelques différences.<br>
+                Les Tours ont des "Tiers" qui sont des niveaux d'améliorations qui peuvent être achetés.<br>
+                Pour chaque Tier, divers améliorations sont proposées cependant il n'est possible d'en choisir qu'une seule.<br>
+                De manières générales les améliorations augmentent les statistiques de la tour.<br>
+                Certaines améliorations rajoutent aussi des "passifs" ce qui ajoute des effets à la tour lors de l'achat de l'amélioration.<br>
+                <br>
+                Au niveau de l'implémentation : 
+                <ul>
+                    <li>- Chaque amélioration est une structure possédant la liste des caractéristiques modifiées et la valeur de la modification.</li>
+                    <li>- Chaque Tier est une structure possédant une liste d'améliorations.</li>
+                    <li>- Chaque Tour possède une Map qui lie le numéro du Tier à sa structure.</li>
+                    (Un Schéma est disponible plus bas)
+                    <br>
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+        <div>
+        <em>Schéma représentant la structure de données des améliorations et des Tiers </em>
+            <img class="devlogs_img" src="img/Devlogs/SchemaLevelUp.png" alt="" width="1500px" height="444px">
+       </div>
+
+
+    </div>
+    <br><br><br>
+    <div class="devlogs"> 
+        <div> 
+        <b><div class="sous_titre_projet_devlog" style="text-align:center;">Effets Implémentés</div></b> <br><br>
+        À l'heure de ce devblog certaines mécaniques supplémentaires on déjà été implémentées :
+        <ul>
+            <li> - Il y a une tour qui ralentit les ennemis </li>
+            <li> - Une qui peut les faire revenir en arrière </li>
+            <li> - Une tour qui fait des dégâts de zone </li>
+            <li> - Une qui peut les étourdir </li>
+            <li> - Une qui pose des pièges causant des dégâts aux ennemis passant dessus </li>
+            <li> - Et enfin une tour qui ne fait pas de dégâts mais permet d'améliorer les statistiques des tours dans son rayon d'action </li>
+        </ul>
+    </div>
     </div>
 
 
