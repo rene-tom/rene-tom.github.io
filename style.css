@@ -311,7 +311,7 @@ footer img{
 }
 
 .proj p{
-    color: #fff;
+    /* color: #fff; */
     font-size: 17px;
     margin-top: 50px;
     margin-left: 20px;
@@ -344,6 +344,22 @@ iframe{
     border-radius: 30px;
     padding-top: 5px;
     margin-bottom: 100px;
+}
+
+.demo {
+    background-color: #C8102E;
+    /* color :#C8102E; */
+    font-size: 33px;
+    width : 600px;
+    height : 50px;
+    border-radius: 20px;
+    vertical-align:  center;
+    text-align: center;
+     margin-left: auto;
+    margin-right: auto;
+     margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
 /* ---------------------------------- DEVLOGS --------------------------------- */
