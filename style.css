@@ -362,6 +362,16 @@ iframe{
 
 }
 
+
+.workedOn{
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+}
+
+
 /* ---------------------------------- DEVLOGS --------------------------------- */
 
 .devlogs{

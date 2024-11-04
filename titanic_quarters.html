@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Titanic Quarters</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <a href="#"><img src="img/menu.png" alt="" width="50px"></a>
+        </div>
+
+        <div class="menu_phone">
+            <img src="img/croix.png" alt="">
+            <a href="index.html">Accueil</a> 
+            <a href="projets.html">Projets</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">Linkedin</a>        
+        </div>
+
+        <script>
+            var menu = document.querySelector(".menu");
+            var menu_phone = document.querySelector(".menu_phone");
+            var croix = document.querySelector(".menu_phone img");
+
+            menu.addEventListener("click", function(){
+                menu_phone.style.display = "grid";
+            })
+
+            croix.addEventListener("click", function(){
+                menu_phone.style.display = "none";
+            })
+        </script>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/"><img src="img/linkedin.png" alt="" width="50px"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="proj">
+        <div class="title_projet">
+            <h1>
+                <span class="titre_projet">Titanic Quarters</span> <br>
+                <span class="sous_titre_projet">09/2024 - 09/2024</span> <br>
+                <span class="langage_projet">Unity / C# </span>
+            </h1>
+        </div>
+
+        <img class="proj_img" src="img/Screen_TQ.png" alt="" width="500px">
+        <div class="demo">
+            <a href= "https://mautus.itch.io/titanic-quarter"><u><b>Le jeu est jouable ICI</b></u> </a>
+        </div>
+        
+        <p>
+            Ceci est un projet de Gamejam fait avec mes camarades organisés par l'ISART.<br>
+            C'est donc un projet en groupe, nous étions 8 à travailler dessus pendant 1 semaine.<br> 
+            Le thème était Fake News/Infobésité.<br>  
+        </p> 
+
+        <p>
+            C'est un jeu d'arcade de type puzzle.<br>
+            Le but est de décrypter/crypter le plus de lettres possible avant que la jauge de panique ne se remplisse.<br>   
+            Ce jeu possède 2 modes, l'un où l'on doit déposer les lettres au bureau correspondant.<br> 
+            L'autre où en fonction de la lettre nous devons traduire la lettre dans un des 3 langages suivants : Morse,Nautique,Militaire.<br>
+        </p> 
+        
+        <p>
+            J'ai été en charge de l'implémentation de certains des éléments de gameplay, dont : <br>
+            <div class="workedOn">
+        <ul> 
+            <li>- Le minijeu de dépôt de lettre dans les bureaux</li>
+            <li>- L'implémentation des minijeu Morse et Militaire (avec leur langages) </li>
+            <li>- L'intégration du Son via FMOD</li>
+            <li>- Et en plus j'ai ajouté quelques effets de polish, comme l'animation exagérée du déplacement des lettres ou le taux de remplissage des paniers en fonction du nombre de lettres </li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="gameplay">
+        <h2>Gameplay</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vkXqEeO2Ly0?si=477GCxboJDjR1w4e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+</body>
+</html>
