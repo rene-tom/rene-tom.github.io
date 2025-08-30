@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Benkuiz</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <a href="#"><img src="img/menu.png" alt="" width="50px"></a>
+        </div>
+
+        <div class="menu_phone">
+            <img src="img/croix.png" alt="">
+            <a href="index.html">Accueil</a> 
+            <a href="projets.html">Projets</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/">Linkedin</a>        
+        </div>
+
+        <script>
+            var menu = document.querySelector(".menu");
+            var menu_phone = document.querySelector(".menu_phone");
+            var croix = document.querySelector(".menu_phone img");
+
+            menu.addEventListener("click", function(){
+                menu_phone.style.display = "grid";
+            })
+
+            croix.addEventListener("click", function(){
+                menu_phone.style.display = "none";
+            })
+        </script>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/tom-ren%C3%A9-97a903269/"><img src="img/linkedin.png" alt="" width="50px"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="proj">
+        <div class="title_projet">
+            <h1>
+                <span class="titre_projet">Benkuiz</span> <br>
+                <span class="sous_titre_projet">06/2025 - 08/2025</span> <br>
+                <span class="langage_projet">Unity / C# </span>
+            </h1>
+        </div>
+
+        <img class="proj_img" src="img/Screen_Benkuiz.png" alt="" width="200px">
+        <div class="demo">
+            <a href= "https://mizaka.itch.io/benkuiz"><u><b>L'application est téléchargeable ICI</b></u> </a>
+        </div>
+        
+        <p>
+            Ceci est un projet personnel de développement d'application mobile<br>
+        </p> 
+
+        <p>
+            C'est une application de quiz personnalisés, son but principal est d'aider pour l'apprentissage/révision en tout genre.<br>
+            On dispose de la possibilité de créer et d'éditer ses quiz comme bon nous le semble parmis les (pour l'instant 2) types de quiz existants.<br>   
+            On peut aussi bien évidemment jouer à ces quiz, et ce à volonté.<br>
+        </p> 
+        
+        <p>
+            J'ai été en charge de tout, dont : <br>
+            <div class="workedOn">
+        <ul> 
+            <li>- L'aspect UI/UX</li>
+            <li>- La possibilité de jouer au 2 types de quiz différents (Clickable et Typed)</li>
+            <li>- La possibilité d'éditer ses quizs comme bon nous le semble, on peut y éditer : 
+               <ul>
+                   <li> - Le titre </li> 
+                   <li> - La description </li> 
+                   <li> - Le type parmis ceux existants (Clickable et Typed)  </li> 
+                   <li> - Le temps disponible pour le compléter </li> 
+                   <li> - Si les réponses doivent être dans un ordre aléatoire ou non</li> 
+                   <li> - Et enfin, les questions et réponses en elle même</li> 
+               </ul>
+            </li>
+            <li>- Le fait de pouvoir sauvegarder et à l'inverse supprimer ses quizs sur son téléphone </li>
+        </ul>
+        </p>
+    </div>
+
+    <p>
+            Je compte retravailler dessus à un moment, je compte y ajouter :
+            <ul>
+                <li> - Le portage sur IOS (je ne peux pas encore tester sur IOS donc je ne peux pas la publier encore)</li>
+                <li> - D'autres types de quiz</li>
+                <li> - Des améliorations de QoL comme le fait d'avoir plusieurs réponses acceptables par exemple</li>
+            </ul>
+        </p> 
+
+         <div class="gameplay">
+            <h2>Démo</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CewEhYYBDd8?si=yXabxFayV-weMuOm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+</div>
+
+
+
+</body>
+</html>
